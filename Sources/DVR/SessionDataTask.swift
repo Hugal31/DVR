@@ -19,6 +19,29 @@ final class SessionDataTask: URLSessionDataTask {
         return interaction?.response
     }
 
+    override var countOfBytesSent: Int64 {
+        get {
+            return 0
+        }
+    }
+
+    override var countOfBytesExpectedToSend: Int64 {
+        get {
+            return 0
+        }
+    }
+
+    override var countOfBytesReceived: Int64 {
+        get {
+            return 0
+        }
+    }
+
+    override var countOfBytesExpectedToReceive: Int64 {
+        get {
+            return 0
+        }
+    }
 
     // MARK: - Initializers
 
